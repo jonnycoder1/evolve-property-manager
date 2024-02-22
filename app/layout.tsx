@@ -8,11 +8,6 @@ const nunito = Nunito({ subsets: ["latin"] });
 
 export { montserrat, nunito }
 
-export const metadata: Metadata = {
-  title: "Evolve Property Manager",
-  description: "Describe your property to potential renters in 10 minutes or less",
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{

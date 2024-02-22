@@ -1,12 +1,12 @@
-export default function AmtyButton(props: any) {
+export default function ButtonIcon(props: any) {
     const { name, isSelected, onClick } = props;
     return (
         <button onClick={onClick}
                 className="text-neutral text-sm font-normal
                             inline-flex justify-center items-center
                             bg-white
-                            border border-solid border-1 border-gray-300 rounded-lg
-                            px-2 py-1 mx-1 my-1
+                            border border-solid border-1 border-gray-300 rounded-xl
+                            px-2 py-[1px] mx-1 my-[2px]
                             hover:border-accent">
             <span>{ name }</span>
             { !isSelected &&
@@ -19,7 +19,7 @@ export default function AmtyButton(props: any) {
             }
             { isSelected &&
                 <span className="inline-flex">
-                    <svg className="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                    <svg className="w-6 h-6 ml-1" aria-hidden="true"
                          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                         <path stroke="#d24f45" strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 12h14"/>
                     </svg>
