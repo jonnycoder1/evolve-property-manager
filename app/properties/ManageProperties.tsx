@@ -1,6 +1,6 @@
 'use client';
 import React, {useState, useEffect, useCallback} from "react";
-import { nunito } from "@/app/layout";
+import {nunito} from '../fonts'
 import { Database } from '../../database.types';
 import { User, createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 import Link from "next/link";
@@ -19,16 +19,20 @@ export default function ManageProperties({ user }: { user: User | null }) {
 
     const getProperties = useCallback(async () => {
         try {
+            if (!user) {
+                console.error("getProperties User is null");
+                return;
+            }
             setLoading(true);
             const { data, error, status } = await supabase
                 .from('properties')
                 .select('id, title, owner')
-                .eq('owner', user?.id)
+                .eq('owner',  user.id)
             if (error && status !== 406) {
                 console.log(error);
                 throw error;
             }
-            const typedData: Property[] | null = data;
+            const typedData = data as Property[] | null;
             setProperties(typedData || []);
         }
         catch(error) {

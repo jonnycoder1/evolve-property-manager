@@ -1,5 +1,5 @@
 import AuthForm from './auth-form'
-import { nunito } from "@/app/layout";
+import { nunito } from './fonts'
 
 export default function Home() {
   return (

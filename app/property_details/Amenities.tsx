@@ -2,7 +2,7 @@
 import ButtonIcon from '@/app/property_details/ButtonIcon';
 import { useState, useEffect } from "react";
 import { amenities as amenitiesData } from "@/app/data/amenities";
-import { nunito } from "@/app/layout";
+import {nunito} from '../fonts'
 import { Database } from '../../database.types';
 import { User, createClientComponentClient } from '@supabase/auth-helpers-nextjs';
 

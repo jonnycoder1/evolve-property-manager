@@ -1,4 +1,4 @@
-import { nunito } from "@/app/layout";
+import {nunito} from './fonts'
 
 export default function Navbar() {
     return (

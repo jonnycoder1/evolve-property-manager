@@ -1,6 +1,6 @@
 'use client';
 import React, { useState, useEffect } from "react";
-import { nunito } from "@/app/layout";
+import {nunito} from '../fonts'
 import ButtonIcon from '@/app/property_details/ButtonIcon';
 import { Database } from '../../database.types';
 import { User, createClientComponentClient } from '@supabase/auth-helpers-nextjs';
