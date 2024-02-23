@@ -24,7 +24,7 @@ export default function AuthForm() {
       }}
       showLinks={false}
       providers={[]}
-      redirectTo="http://localhost:3000/auth/callback"
+      redirectTo={process.env.AUTH_CALLBACK_URL}
     />
   )
 }

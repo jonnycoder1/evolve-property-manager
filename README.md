@@ -1,7 +1,10 @@
+## Overview
+This is a Next.js and Supabase web application for a property owner to describe their property to Evolve. 
+
+It is still work-in-progress but a demo can be found at: https://evolve-property-manager.vercel.app/
+
 
 ## Getting Started
-
-
 
 ### Supabase Install & Setup Commands
 ```bash
