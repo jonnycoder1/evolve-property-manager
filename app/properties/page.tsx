@@ -6,6 +6,7 @@ import Navbar from "@/app/Navbar";
 
 export default async function Properties() {
     const supabase = createServerComponentClient<Database>({cookies})
+    console.log("properties page: getting user")
     const {data: {user},} = await supabase.auth.getUser();
 
     return (

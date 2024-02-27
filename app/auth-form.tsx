@@ -6,7 +6,7 @@ import { Database } from '../database.types'
 
 export default function AuthForm() {
   const supabase = createClientComponentClient<Database>()
-
+  console.log("callback url: " + process.env.AUTH_CALLBACK_URL);
   return (
     <Auth
       supabaseClient={supabase}
