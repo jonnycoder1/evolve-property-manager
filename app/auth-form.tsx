@@ -4,9 +4,13 @@ import { ThemeSupa } from '@supabase/auth-ui-shared'
 import { createClientComponentClient } from '@supabase/auth-helpers-nextjs'
 import { Database } from '../database.types'
 
-export default function AuthForm() {
+type AuthFormProps = {
+  redirectUrl: string
+};
+
+export default function AuthForm({ redirectUrl }: AuthFormProps) {
+  console.log('AuthForm redirectUrl = ' + redirectUrl);
   const supabase = createClientComponentClient<Database>()
-  console.log("callback url: " + process.env.AUTH_CALLBACK_URL);
   return (
     <Auth
       supabaseClient={supabase}
@@ -24,7 +28,7 @@ export default function AuthForm() {
       }}
       showLinks={false}
       providers={[]}
-      redirectTo={process.env.AUTH_CALLBACK_URL}
+      redirectTo={redirectUrl}
     />
   )
 }
