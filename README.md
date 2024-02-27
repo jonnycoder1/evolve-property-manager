@@ -1,7 +1,29 @@
 ## Overview
-This is a Next.js and Supabase web application for a property owner to describe their property to Evolve. 
+This is a Next.js and Supabase web application for a property owner to describe their rental property to Evolve (similar to AirBNB). 
 
-It is still work-in-progress but a demo can be found at: https://evolve-property-manager.vercel.app/
+This is primarily a front-end app for a take-home interview coding assignment. 
+
+The demo can be found at: https://evolve-property-manager.vercel.app/
+
+
+## Purpose & User Stories
+The following description is the project spec given for the assignment.
+
+Note: Story #2 is not completed but is nearly built-in given the auth setup.
+
+Please build a simple product for a property owner to describe their propety to Evolve. This can be a wizard type UI or a simple form or something in between. 
+
+A few user stories to consider are shared below. Please note that you can make this backend only, frontend only or fullstack depending on the role, level and your comfort level. 
+
+### User Stories
+1. As a vacation property owner that wants to have Evolve manage my property - 
+-  I want to create a new property listing on this product
+-  I want to be able to describe the property in some level detail (don't worry about photos for now)
+-  I want to be able to add specific and multiple amenties to my property (eg: parking, hot tub, Wifi etc.) 
+-  I want to be able to add 1+ rooms to my property (eg: Living Room, Bedroom 1, etc.)
+2. As an Evolve agent - 
+-  I want to be able to fetch and review a property listing
+
 
 
 ## Getting Started
